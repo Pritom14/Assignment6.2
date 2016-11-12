@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shaloin.sixthassignmentb.MainActivity">
+
+
+    <fragment
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:name="com.example.shaloin.sixthassignmentb.ListFragment"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/fragment"
+        tools:layout="@layout/list_fragment" />
+
+    <fragment
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:name="com.example.shaloin.sixthassignmentb.Layout1"
+        android:layout_toRightOf="@+id/fragment"
+        android:layout_toEndOf="@+id/fragment"
+        android:id="@+id/fragment2"
+        tools:layout="@layout/layout1" />
+</RelativeLayout>
